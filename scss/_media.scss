@@ -1,0 +1,62 @@
+input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration { display: none; }
+
+#search-input::-webkit-outer-spin-button,
+#search-input::-webkit-inner-spin-button,
+#search-input::-webkit-clear-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #d4d4d4; //#d4d4d4
+    box-shadow: 0 0 2px rgba(0, 0, 0, .2) inset;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #939393; //#939393
+    border-radius: 8px;
+    border: 3px solid #d4d4d4;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #7c7c7c;
+}
+
+@keyframes fly {
+
+    0% {
+        margin-right: 0px;
+        margin-top: 0px;
+        display: inline;
+    }
+
+    25% {
+        margin-right: -50px;
+        margin-top: -50px;
+        opacity: 0;
+        display: none;
+    }
+
+    50% {
+        margin-right: 50px;
+        margin-top: 50px;
+    }
+
+    51% {
+        display: inline;
+    }
+
+    100% {
+        margin-right: 0px;
+        margin-top: 0px;
+    }
+}
